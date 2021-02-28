@@ -1,0 +1,7 @@
+.DS_Store
+
+## No Public or Private keys in git
+files/id_rsa
+files/id_rsa.pub
+
+

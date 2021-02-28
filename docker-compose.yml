@@ -1,0 +1,15 @@
+
+  ci-deploy-aws:
+    build: .
+    cap_add:
+      - SYS_PTRACE
+    security_opt:
+      - seccomp:unconfined
+    dockerfile: Dockerfile
+    environment:
+    - GITLAB_RUNNER_TAGLIST=deploy,monsoon-office-dublin,aws
+    - GITLAB_URL=https://yourdoamin.com/
+    - GITLAB_TOKEN=your_token
+   
+
+    
